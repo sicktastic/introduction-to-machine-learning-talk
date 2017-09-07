@@ -12,15 +12,17 @@ from termcolor import colored
 file = 'dataset/starbucks_locations_worldwide.csv'
 starbucks = pd.read_csv(file)
 
-# print data stats
-print(colored('This dataset includes a record for every Starbucks or subsidiary store location currently in operation as of', 'magenta'), colored('February 2017.\n', 'red'))
-print(colored('Data Shape:', 'yellow'), colored(starbucks.shape, 'cyan'))
-print(colored('Total Countries:', 'yellow'), colored(len(starbucks.Country.unique()), 'cyan'))
-print(colored('\nTop 5 Countries:', 'yellow'))
-print(colored(starbucks.Country.value_counts().head(5), 'cyan'))
-print(colored('\nOwership:', 'yellow'))
-print(colored(starbucks['Ownership Type'].value_counts(), 'cyan'))
-print('\nPredict ownership type probability from top five countries.')
+def instruction():
+    print(colored('This dataset includes a record for every Starbucks or subsidiary store location currently in operation as of', 'magenta'), colored('February 2017.\n', 'red'))
+    print(colored('Data Shape:', 'yellow'), colored(starbucks.shape, 'cyan'))
+    print(colored('Total Countries:', 'yellow'), colored(len(starbucks.Country.unique()), 'cyan'))
+    print(colored('\nTop 5 Countries:', 'yellow'))
+    print(colored(starbucks.Country.value_counts().head(5), 'cyan'))
+    print(colored('\nOwership:', 'yellow'))
+    print(colored(starbucks['Ownership Type'].value_counts(), 'cyan'))
+    print('\nPredict ownership type probability from top five countries.')
+
+# instruction()
 
 # predicting ownership type probability from top five countries
 # use knn algorithm
