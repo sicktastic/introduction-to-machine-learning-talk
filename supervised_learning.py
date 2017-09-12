@@ -12,7 +12,8 @@ from termcolor import colored
 file = 'dataset/starbucks_locations_worldwide.csv'
 starbucks = pd.read_csv(file)
 
-def instruction():
+# instructions
+def instructions():
     print(colored('This dataset includes a record for every Starbucks or subsidiary store location currently in operation as of', 'magenta'), colored('February 2017.\n', 'red'))
     print(colored('Data Shape:', 'yellow'), colored(starbucks.shape, 'cyan'))
     print(colored('Total Countries:', 'yellow'), colored(len(starbucks.Country.unique()), 'cyan'))
@@ -22,7 +23,7 @@ def instruction():
     print(colored(starbucks['Ownership Type'].value_counts(), 'cyan'))
     print('\nPredict ownership type probability from top five countries.')
 
-# instruction()
+instructions()
 
 # predicting ownership type probability from top five countries
 # use knn algorithm
