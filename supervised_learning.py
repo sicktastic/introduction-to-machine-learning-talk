@@ -1,7 +1,7 @@
 # 1. Supervised Learning
 # 2. Classification Example
 # 3. Tools we are using: scikit-learn, pandas, numpy, matplotlib
-# 4. KNN algorithm: scikit https://goo.gl/aWVSsy
+# 4. Decision Tree or KNN algorithm
 # 5. Kaggle Dataset: Starbucks Locations Worldwide https://goo.gl/5GfFcU
 
 import pandas as pd
