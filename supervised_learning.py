@@ -26,7 +26,7 @@ def instructions():
 instructions()
 
 # predicting ownership type probability from top five countries
-# use knn algorithm
+# use decision tree or knn algorithm
 
 # visualize the top three countries on map
 
