@@ -1,8 +1,21 @@
+# OVERVIEW
 # 1. Supervised Learning
 # 2. Classification Example
 # 3. Tools we are using: scikit-learn, pandas, numpy, matplotlib
 # 4. Decision Tree or KNN algorithm
 # 5. Kaggle Dataset: Starbucks Locations Worldwide https://goo.gl/5GfFcU
+
+# STEPS
+# 1. Define a problem
+# 2. Analyize Data
+    # a. Look at all columns
+    # b. Look at important features
+    # c. Look at the size/count
+    # d. Look at possible outputs
+# 3. Prepare Data
+# 4. Evaluate Algorithm
+# 5. Improve Results
+
 
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
