@@ -1,8 +1,6 @@
 from math import sqrt
 
-# K-Nearest Neighbor
 # Euclidean Distance Example
-
 plot1 = [1, 3]
 plot2 = [2, 5]
 
