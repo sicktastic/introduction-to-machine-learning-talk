@@ -4,8 +4,8 @@
 
 # 1. Supervised Learning
 # 2. Classification Example
-# 3. Tools we are using: scikit-learn, pandas, numpy, matplotlib
-# 4. Naive Bayes or Decision Tree or KNN algorithm or Neural Network
+# 3. Tools we are using: scikit-learn, pandas, numpy, matplotlib, tensorFlow
+# 4. Simple Neural Network example with Tensorflow
 # 5. Kaggle Dataset: Starbucks Locations Worldwide https://goo.gl/5GfFcU
 
 ############################################################################
@@ -28,14 +28,17 @@ import matplotlib.pyplot as plt
 from matplotlib import style
 import numpy as np
 import pandas as pd
-from sklearn.neighbors import KNeighborsClassifier
+import tensorflow as tf
+# from sklearn.neighbors import KNeighborsClassifier
 from termcolor import colored
 
 # load data
 file = 'dataset/starbucks_locations_worldwide.csv'
 starbucks = pd.read_csv(file)
 
-print (starbucks.head)
+#print(starbucks.head)
+#print(starbucks.columns)
+#print(starbucks.shape)
 
 ############################################################################
 
@@ -51,7 +54,7 @@ def instructions():
     print(colored(starbucks['Ownership Type'].value_counts(), 'cyan'))
     print('\nPredict ownership type probability from top five countries.')
 
-# instructions()
+instructions()
 
 ############################################################################
 
