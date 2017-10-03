@@ -4,7 +4,7 @@
 
 # - Supervised Learning
 # - Classification Example
-# - Tools we are using: scikit-learn, pandas, numpy, matplotlib, tensorFlow
+# - Tools we are using: matplotlib, numpy, pandas, scikit-learn, tensorFlow
 # - Simple Neural Network example with Tensorflow
 # - Kaggle Dataset: Starbucks Locations Worldwide https://goo.gl/5GfFcU
 
@@ -76,5 +76,3 @@ instructions()
 ############################################################################
 
 # print(starbucks[['Country', 'Longitude', 'Latitude']])
-
-############################################################################
