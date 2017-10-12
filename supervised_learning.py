@@ -5,7 +5,7 @@
 # - Supervised Learning
 # - Classification Example
 # - Tools we are using: matplotlib, numpy, pandas, scikit-learn, tensorFlow
-# - Simple Neural Network example with Tensorflow?
+# - Simple Neural Network example with Tensorflow or Scikit?
 # - Kaggle Dataset: Starbucks Locations Worldwide https://goo.gl/5GfFcU
 
 ############################################################################
