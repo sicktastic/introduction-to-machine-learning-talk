@@ -19,6 +19,7 @@
 #   - Look at the size/count
 #   - Look at possible outputs
 # - Prepare Data
+#   - Normalize the data
 # - Evaluate Algorithm
 # - Improve Results
 
@@ -43,25 +44,25 @@ starbucks = pd.read_csv(file)
 
 # Print data
 
-print(starbucks.head)
-print(starbucks.columns)
-print(starbucks.shape)
+# print(starbucks.head)
+# print(starbucks.columns)
+# print(starbucks.shape)
 
 ############################################################################
 
 # Instructions
 
-# def instructions():
-#     print(colored('This dataset includes a record for every Starbucks or subsidiary store location currently in operation as of', 'magenta'), colored('February 2017.\n', 'red'))
-#     print(colored('Data Shape:', 'yellow'), colored(starbucks.shape, 'cyan'))
-#     print(colored('Total Countries:', 'yellow'), colored(len(starbucks.Country.unique()), 'cyan'))
-#     print(colored('\nTop 5 Countries:', 'yellow'))
-#     print(colored(starbucks.Country.value_counts().head(5), 'cyan'))
-#     print(colored('\nOwership:', 'yellow'))
-#     print(colored(starbucks['Ownership Type'].value_counts(), 'cyan'))
-#     print('\nPredict ownership type probability from top five countries.')
+def instructions():
+    print(colored('This dataset includes a record for every Starbucks or subsidiary store location currently in operation as of', 'magenta'), colored('February 2017.\n', 'red'))
+    print(colored('Data Shape:', 'yellow'), colored(starbucks.shape, 'cyan'))
+    print(colored('Total Countries:', 'yellow'), colored(len(starbucks.Country.unique()), 'cyan'))
+    print(colored('\nTop 5 Countries:', 'yellow'))
+    print(colored(starbucks.Country.value_counts().head(5), 'cyan'))
+    print(colored('\nOwership:', 'yellow'))
+    print(colored(starbucks['Ownership Type'].value_counts(), 'cyan'))
+    print('\nPredict ownership type probability from top five countries.')
 
-# instructions()
+instructions()
 
 ############################################################################
 
