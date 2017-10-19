@@ -4,6 +4,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 # import mnist data
 # one_hot = True, 5 = 0000010000
+# MNIST data is split into three parts: 55,000 data points of training data (mnist.train), 10,000 points of test data (mnist.test), and 5,000 points of validation data (mnist.validation).
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
@@ -13,6 +14,7 @@ mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 # placeholders are initially empty and are used to feed in the  actual training example
 # it is flattened to 784 dimensional vector for optimization
 # None means it can be any length
+# placeholder needs datatype and shape
 x = tf.placeholder(tf.float32, [None, 784])
 
 # initial W and b to full of zeros
