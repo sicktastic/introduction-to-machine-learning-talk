@@ -12,9 +12,12 @@ mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 # it is flattened to 784 dimensional vector for optimization
 # None means it can be any length
 x = tf.placeholder(tf.float32, [None, 784])
+
 # initial W and b to full of zeros
+
 # weight
 W = tf.Variable(tf.zeros([784, 10]))
+
 # bias
 b = tf.Variable(tf.zeros([10]))
 
@@ -24,6 +27,7 @@ y = tf.nn.softmax(tf.matmul(x, W) + b)
 # determin the loss of the model
 # input correct answers
 y_ = tf.placeholder(tf.float32, [None, 10])
+
 # implment cross entropy
 cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=[1]))
 
