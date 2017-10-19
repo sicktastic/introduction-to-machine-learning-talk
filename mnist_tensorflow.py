@@ -3,6 +3,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 # import mnist data
+# one_hot = True, 5 = 0000010000
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
@@ -36,6 +37,7 @@ cross_entropy = tf.reduce_mean(-tf.reduce_sum(y_ * tf.log(y), reduction_indices=
 train_step = tf.train.GradientDescentOptimizer(0.5).minimize(cross_entropy)
 
 # launch the model in an InteractiveSession
+# tensorflow requires you to initialize (variables) session before run
 sess = tf.InteractiveSession()
 tf.global_variables_initializer().run()
 
