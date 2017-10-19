@@ -26,6 +26,7 @@ W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 
 # softmax is the activation function
+# example with sigmoid too tf.sigmoid
 y = tf.nn.softmax(tf.matmul(x, W) + b)
 
 # determin the loss of the model
