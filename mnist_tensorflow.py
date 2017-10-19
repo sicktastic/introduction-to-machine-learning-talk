@@ -9,6 +9,7 @@ mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 
 # create model
 # set placeholder, set values after TensofFlow runs
+# placeholders are initially empty and are used to feed in the  actual training example
 # it is flattened to 784 dimensional vector for optimization
 # None means it can be any length
 x = tf.placeholder(tf.float32, [None, 784])
